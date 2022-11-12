@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="vh-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 text-black">
+      
+              <div class="logo_header">
+                <a href="Register.html">
+                    <i class="logo_img">
+                        <img src="image/logo_96.png">
+                    </i> </a>
+                <span class="h1 fw-bold mb-0" >MIKS</span>
+               
+              </div>
+      
+              <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+                <form class="form_act" style="width: 23rem;"> 
+                    <!-- Firstname input -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="text" id="form2Example28" class="form-control form-control-lg" placeholder="Firstname"/>
+                  </div>
+                  <!-- Lastname input -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="fa-regular fa-user"></i>
+                    </span>
+                    <input type="text" id="form2Example28" class="form-control form-control-lg" placeholder="Lastname"/>
+                  </div>
+                     <!-- email input -->     
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="fa-regular fa-envelope"></i>
+                    </span>
+                    <input type="email" id="form2Example28" class="form-control form-control-lg" placeholder="Email"/>
+                  </div>
+                  <!-- password input -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password" id="form2Example28" class="form-control form-control-lg" placeholder="Password"/>
+                  </div>
+                  <!-- Confirm password input -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="fa-duotone fa-lock"></i>
+                    </span>
+                    <input type="password" id="form2Example28" class="form-control form-control-lg" placeholder="Confirm password"/>
+                  </div>
+
+                  <!-- Check req -->
+                    <div class="d-flex justify-content-around align-items-center mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                            <label class="form-check-label" for="form1Example3">I agree to Platforms Terms of Service and Privacy Policy </label>
+                        </div>
+                    </div>
+                    
+
+                    <!-- submit button -->
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary" type="button" onclick="createAcc()">SIGN UP</button>
+                    </div>
+
+                    <!-- line OR -->
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0 text-muted">Signup with</p>
+                    </div>
+
+                    <div class="d-flex justify-content-around align-items-center mb-4 meida_link">
+                        <!-- facebook -->
+                        <a class="btn btn-primary" href="#!"
+                        role="button">
+                        <i class="fa-brands fa-facebook"></i></a>
+
+                        <!-- google -->
+                        <a class="btn btn-primary" href="#!"
+                            role="button">
+                            <i class="fa-brands fa-google"></i></a>
+                    </div>
+
+                    <p class="small fw-bold" style="margin-left: 45px;">Already have an account? <a href="Login.html"
+                        class="link-danger">Login</a></p> 
+                </form>
+      
+              </div>
+      
+            </div>
+            <div class="col-sm-6 px-0 d-none d-sm-block">
+                <div class="welcome">Hi! Welcome to MIKS, let's Register to explore me</div>
+                <img src="https://velog.velcdn.com/images%2Fchaewon1121%2Fpost%2Fef3d776b-4eaf-4b2b-aa19-14ed55d0ed00%2Fimage.png"
+                alt="Login image" class="w-100 vh-90" style="object-fit: cover; object-position: left; ">
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

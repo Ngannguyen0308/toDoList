@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <!-- CSS/BOOSTRAP -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- MODAL BOOSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:100vh; background:var(--body-color)">
+    <!-- sidebar left -->
+    <nav class="sidebar close">
+        <div class="header_sidebar">
+            <!-- header logo -->
+            <header class="image-text">
+                <span class="image">
+                        <a href="Home.html">  
+                            <img src="image/logo_96.png" alt="logo">
+                        </a>
+                </span>
+                <div class="text header-text">
+                    <span class="name">MIKS</span>
+                </div>
+            </header>
+            <!-- Premium button -->
+            <button class="premium-button">Go Premium
+                <i class="fa-solid fa-crown"></i>
+            </button>
+        </div>
+        <!-- Toggle
+        <i class="fa-solid fa-bars toggle"></i> -->
+               
+
+        <!--task links  -->
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <!-- my day -->
+                    <li class="nav-link">
+                        <a href="#" style="border-bottom: 1px solid whitesmoke; width: 180px; height: 30px;">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <span class="text nav-text">My day</span>
+                        </a>
+                    </li>
+                    <!-- next 7 days -->
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span class="text nav-text">Next 7 days</span>
+                        </a>
+                    </li>
+                    <!-- all my tasks -->
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span class="text nav-text">All my tasks</span>
+                        </a>
+                    </li>
+                    <!-- MY LISTS -->
+                    <div class="my-lists">
+                        <p class="main-lists">MY LISTS
+                            <i class="fa-solid fa-circle-plus"></i></p>
+                    </div>
+                    <!-- subtask -->
+                    <li class="nav-link">
+                        <a href="#" class="" 
+                        data-toggle="modal" 
+                        data-target="#personalModal">
+                            <i class='fas fa-caret-right'></i>
+                            <span class="text nav-text">Personal</span>
+                        </a>
+                    </li>
+                    <!-- subtask -->
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='fas fa-caret-right'></i>
+                            <span class="text nav-text">Work</span>
+                        </a>
+                    </li>
+                    <!-- MIKS.DO -->
+                    <div class="my-lists">
+                        <p class="main-lists">MIKS.DO</div>
+                    <!-- subtask -->
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='fas fa-caret-right'></i>
+                            <span class="text nav-text">Support</span>
+                        </a>
+                    </li>
+                    <!-- subtask -->
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='fas fa-caret-right'></i>
+                            <span class="text nav-text">About</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- DASHBOARD -->
+    <section class="dashboard">
+        <div class="top">
+            <i class="fa-solid fa-bars toggle"></i>
+        </div>
+        <!-- navbar right -->
+        <div class="wrapper">
+            <div class="navbar-right">
+                <div class="notifications">
+                    <!-- search box -->
+                    <div class="d-flex input-group">
+                        <div class="form-outline">
+                            <input type="search" id="form1" class="form-control" placeholder="Search"/>
+                        </div>
+                        <button type="button" class="btn btn-warning">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- bell -->
+                <div class="icon_wrap">
+                    <i class="far fa-bell"></i>
+                </div>
+
+                <div class="profile">
+                    <div class="icon_wrap">
+                        <img class="img_main" src="image/avt.png" alt="profile_img">
+                        <i class="fas fa-chevron-down"></i> 
+                    </div>
+
+                    <!--user profile -->
+                    <div class="profile_dd show">
+                        <ul class="profile_ul">
+                            <div class="profile_title">
+                                <li class="profile_tt">
+                                <span class="user_title">
+                                    <h4>USER PROFILE</h4>
+                                </span>
+                                <li>
+                                <li class="profile_pic">
+                                    <span class="user_pic">
+                                        <img src="image/avt.png" width="100px">
+                                    </span>
+                                <li>
+                                <li class="profile_name">
+                                    <span class="user_name">
+                                        <p>Ngan Nguyen</p>
+                                    </span>
+                                <li>
+                            </div>
+                            
+                            <li class="edit_profile">
+                                <a class="edit" href="userProfile.html">
+                                    <span class="picon">
+                                        <i class="fas fa-user-alt"></i>
+                                    </span>Edit Profile</a>
+                            </li>
+                            
+                            <li>
+                                <a class="settings" href="changePass.html">
+                                    <span class="picon"><i class="fas fa-cog"></i>
+                                    </span>Change Password</a>
+                            </li>
+                            <li>
+                                <a class="settings" href="#">
+                                    <span class="picon">
+                                        <i class="fa-solid fa-circle-question"></i>
+                                    </span>Help Centre</a>
+                            </li><br>
+                            <li>
+                                <a class="settings" href="Login.html">
+                                    <button type="button" class="btn btn-outline-warning">Log out
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- WELCOME USER -->
+        <div class="welcome_user">
+            <div class="title_username">
+                <h4>Welcome, Ngan Nguyen!</h4>
+            </div>
+        </div>
+        <!-- MAIN TASK LIST + ADD TASK LIST -->
+        <div class="todo-list">
+            <!-- <div class="todo-header">
+                <h2 class="list-title">My Day</h2>
+                <p class="task-count">2 tasks remaining</p>
+            </div> -->
+            <div class="todo-body">
+                <div class="tasks">
+                    <!-- task 1 -->
+                    <a href="tasklist.html">
+                        <div class="task">
+                            <input type="radio" id="task-1">
+                            <label for="task-1">
+                                <span class="custom-checkbox"></span>
+                            Record lecture video</label>
+                        </div>
+                    </a>
+                    
+                    <!-- button task 1 -->
+                    <div class="button-task">
+                        <button class="btn dulpicate">
+                        <i class="fa-regular fa-copy"></i>
+                        </button>
+                        <button class="btn stick">
+                            <i class="fa-solid fa-note-sticky"></i>
+                        </button>
+                        <button class="btn delete">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <!-- task 2 -->
+                    <a href="tasklist.html">
+                        <div class="task">
+                            <input type="radio" id="task-1">
+                            <label for="task-1">
+                                <span class="custom-checkbox"></span>
+                            Record lecture video</label>
+                        </div>
+                    </a>
+                    
+                    <!-- button task -->
+                    <div class="button-task">
+                        <button class="btn dulpicate">
+                        <i class="fa-regular fa-copy"></i>
+                        </button>
+                        <button class="btn stick">
+                            <i class="fa-solid fa-note-sticky"></i>
+                        </button>
+                        <button class="btn delete">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="mt-lg-5 new-task-creator">
+                    <form action="">
+                        <button class="btn list" aria-label="create task list">+</button>
+                        <input type="text" class="tasks-add" placeholder="Add task" aria-label="new task name">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- personal modal -->
+    <div class="modal fade" id="personalModal" tabindex="-1" role="dialog" aria-labelledby="personalModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- title and ellips icon -->
+                    <div class="d-flex body-title">
+                        <h4>My Lists>Personal</h4>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                            </button>
+                            <!-- <span class="caret"></span></button> -->
+                            <ul class="dropdown-menu">
+                                <li><a href="#">
+                                    <i class="fa-solid fa-copy"></i>
+                                    Duplicate</a></li>
+                                <li><a href="#">
+                                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                    Share</a></li>
+                                <li><a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    Delete</a></li>
+                                <li><a href="#">
+                                    <i class="fa fa-archive" aria-hidden="true"></i>
+                                    Archive</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- descriptions and subtask -->
+                    <div class="descr-sub">
+                        <div class="form-outline flex-fill">
+                            <input type="text" id="form2" class="form-control" placeholder="Personal" />
+                        </div>
+
+                        <!-- description -->
+                        <div class="mt-4 form-outline">
+                            <label>DESCRIPTION</label>
+                            <input type="text" id="form2" class="form-control" placeholder="Insert your description" />
+                        </div>
+                        <!-- subtask -->
+                        <div class="mt-4 form-outline">
+                            <label>SUBTASKS</label>
+                            <div class="d-flex task">
+                                <input type="radio" id="task-2">
+                                <input type="text" id="form2" class="form-control" placeholder="Add a new subtask" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    <script src="script.js"> </script>
+</body>
+</html>
